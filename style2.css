@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif, "Poppins";
+	margin: 0;
+}
+.header {
+	background-color: #091253;
+	height: 100vh;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+}
+.header h1 {
+	font-size: 50px;
+	text-align: center;
+}
+.header a {
+	text-decoration: none;
+	font-size: 30px;
+	justify-content: center;
+	display: flex;
+	margin-top: 20px;
+}
+.smiles {
+	gap: 70px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.smile {
+	width: 370px;
+	height: 370px;
+	border-radius: 50%;
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+.smile:nth-child(2) {
+	background: linear-gradient(to bottom, #f34238 55%, yellow);
+}
+.smile:nth-child(2) .eye {
+	justify-content: end;
+}
+.smile:nth-child(2) .eye:nth-child(2) {
+	justify-content: start;
+}
+.smile:nth-child(2) .mouth:nth-child(2) {
+	height: 20px;
+	border-radius: 0;
+	background-color: #9c0b00;
+}
+
+.smile:nth-child(3) .eye {
+	justify-content: start;
+}
+.eyes {
+	gap: 40px;
+}
+.smile .eye {
+	width: 86px;
+	height: 86px;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.eye span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #000;
+	margin: 10px;
+}
+.mouth {
+	width: 165px;
+	height: 75px;
+	background-color: #b57700;
+	border-bottom-left-radius: 90px;
+	border-bottom-right-radius: 90px;
+}
